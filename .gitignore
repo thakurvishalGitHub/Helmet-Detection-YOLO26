@@ -4,4 +4,22 @@ Desktop.ini
 .DS_Store
 
 # Gradio temporary files
-.gradio/
+.gradio/.venv/
+venv/
+
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+runs/
+outputs/
+
+tests/
+test_images/
+
+.env
+.env.*
+
+.vscode/
+*.log

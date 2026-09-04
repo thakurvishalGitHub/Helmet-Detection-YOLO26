@@ -1,6 +1,3 @@
-import torch
-from ultralytics import YOLO
-import gradio as gr
 import cv2
 import torch
 import gradio as gr
