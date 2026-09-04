@@ -1,10 +1,4 @@
-# Windows / OS junk
-Thumbs.db
-Desktop.ini
-.DS_Store
-
-# Gradio temporary files
-.gradio/.venv/
+.venv/
 venv/
 
 __pycache__/
@@ -22,4 +16,10 @@ test_images/
 .env.*
 
 .vscode/
+.gradio/
+
 *.log
+
+Thumbs.db
+Desktop.ini
+.DS_Store
