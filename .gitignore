@@ -1,0 +1,30 @@
+# Virtual environment - keep only on PC
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# YOLO generated outputs
+runs/
+outputs/
+
+# Temporary testing files
+test_images/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# IDE files
+.vscode/
+
+# Logs
+*.log
+
+# Windows / OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store
