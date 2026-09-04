@@ -1,10 +1,14 @@
+import torch
 from ultralytics import YOLO
 import gradio as gr
 import cv2
+import torch
+import gradio as gr
+from ultralytics import YOLO
 
 MODEL_PATH = "models/best.pt"
 CONFIDENCE = 0.40
-DEVICE = 0   # GPU use karega; agar issue ho to "cpu" kar dena
+DEVICE = 0 if torch.cuda.is_available() else "cpu"
 
 model = YOLO(MODEL_PATH)
 
@@ -82,4 +86,5 @@ with gr.Blocks(title="Helmet Detection Live") as demo:
         stream_every=0.1
     )
 
-demo.launch(share=True)
+if __name__ == "__main__":
+    demo.launch()
